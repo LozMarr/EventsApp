@@ -14,8 +14,11 @@
 			this.Show();
 		}
 
-		private void btnSeating_Click(object sender, EventArgs e) {
-
+		private void btnEvents_Click(object sender, EventArgs e) {
+			FormEvents formEvents = new FormEvents();
+			this.Hide();
+			formEvents.ShowDialog();
+			this.Show();
 		}
 	}
 }

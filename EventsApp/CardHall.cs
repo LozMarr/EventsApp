@@ -11,7 +11,8 @@
 		}
 
 		private void lbl_Click(object sender, EventArgs e) {
-
+			FormAddHalls formAddHalls = new FormAddHalls(true);
+			formAddHalls.ShowDialog();
 		}
 	}
 }

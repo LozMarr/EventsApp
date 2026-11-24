@@ -139,6 +139,7 @@
 			btnSave.TabIndex = 17;
 			btnSave.Text = "Сохранить";
 			btnSave.UseVisualStyleBackColor = false;
+			btnSave.Click += btnSave_Click;
 			// 
 			// button1
 			// 

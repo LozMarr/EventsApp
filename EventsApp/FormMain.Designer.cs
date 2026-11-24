@@ -24,9 +24,10 @@
 		/// </summary>
 		private void InitializeComponent() {
 			lblName = new Label();
-			btnSeating = new Button();
 			btnHalls = new Button();
 			btnClose = new Button();
+			btnEvents = new Button();
+			label1 = new Label();
 			SuspendLayout();
 			// 
 			// lblName
@@ -38,29 +39,16 @@
 			lblName.TabIndex = 0;
 			lblName.Text = "Сафронов В. М.";
 			// 
-			// btnSeating
-			// 
-			btnSeating.BackColor = Color.Indigo;
-			btnSeating.FlatAppearance.BorderSize = 0;
-			btnSeating.FlatStyle = FlatStyle.Flat;
-			btnSeating.Location = new Point(50, 79);
-			btnSeating.Name = "btnSeating";
-			btnSeating.Size = new Size(200, 75);
-			btnSeating.TabIndex = 1;
-			btnSeating.Text = "Редактирование рассадок и мероприятий";
-			btnSeating.UseVisualStyleBackColor = false;
-			btnSeating.Click += btnSeating_Click;
-			// 
 			// btnHalls
 			// 
 			btnHalls.BackColor = Color.Indigo;
 			btnHalls.FlatAppearance.BorderSize = 0;
 			btnHalls.FlatStyle = FlatStyle.Flat;
-			btnHalls.Location = new Point(50, 189);
+			btnHalls.Location = new Point(50, 124);
 			btnHalls.Name = "btnHalls";
 			btnHalls.Size = new Size(200, 75);
 			btnHalls.TabIndex = 2;
-			btnHalls.Text = "Редактирование залов";
+			btnHalls.Text = "Залы";
 			btnHalls.UseVisualStyleBackColor = false;
 			btnHalls.Click += btnHalls_Click;
 			// 
@@ -77,15 +65,39 @@
 			btnClose.UseVisualStyleBackColor = false;
 			btnClose.Click += btnClose_Click;
 			// 
+			// btnEvents
+			// 
+			btnEvents.BackColor = Color.Indigo;
+			btnEvents.FlatAppearance.BorderSize = 0;
+			btnEvents.FlatStyle = FlatStyle.Flat;
+			btnEvents.Location = new Point(50, 230);
+			btnEvents.Name = "btnEvents";
+			btnEvents.Size = new Size(200, 75);
+			btnEvents.TabIndex = 8;
+			btnEvents.Text = "Мероприятия";
+			btnEvents.UseVisualStyleBackColor = false;
+			btnEvents.Click += btnEvents_Click;
+			// 
+			// label1
+			// 
+			label1.AutoSize = true;
+			label1.Font = new Font("Calibri", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+			label1.Location = new Point(71, 68);
+			label1.Name = "label1";
+			label1.Size = new Size(158, 33);
+			label1.TabIndex = 9;
+			label1.Text = "Управление:";
+			// 
 			// FormMain
 			// 
 			AutoScaleDimensions = new SizeF(8F, 19F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = Color.MediumPurple;
-			ClientSize = new Size(300, 300);
+			ClientSize = new Size(300, 350);
+			Controls.Add(label1);
+			Controls.Add(btnEvents);
 			Controls.Add(btnClose);
 			Controls.Add(btnHalls);
-			Controls.Add(btnSeating);
 			Controls.Add(lblName);
 			Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
 			ForeColor = Color.White;
@@ -101,8 +113,9 @@
 		#endregion
 
 		private Label lblName;
-		private Button btnSeating;
 		private Button btnHalls;
 		private Button btnClose;
+		private Button btnEvents;
+		private Label label1;
 	}
 }

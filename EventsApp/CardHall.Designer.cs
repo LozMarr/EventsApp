@@ -59,6 +59,7 @@
 			lblLocation.Size = new Size(625, 100);
 			lblLocation.TabIndex = 2;
 			lblLocation.Text = "label2";
+			lblLocation.TextAlign = ContentAlignment.MiddleCenter;
 			lblLocation.Click += lbl_Click;
 			// 
 			// CardHall
